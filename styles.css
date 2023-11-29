@@ -1,0 +1,277 @@
+body {
+  margin: 0px;
+}
+
+.cv-document {
+  box-sizing: border-box;
+  border: none;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  vertical-align: baseline;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family: arial, sans-serif, tahoma;
+  font-size: 10pt;
+}
+
+.cv-page {
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+  text-decoration: none;
+  width: 900px;
+  min-height: 900px;
+  margin: 0 auto;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+  background-color: #fff;
+  position: relative;
+  padding: 40px;
+}
+
+/* tạo kiểu cho các thẻ tiêu đề */
+.section-title {
+  text-transform: uppercase;
+  font-weight: bold;
+  border-bottom: 2px solid;
+}
+
+/* chọn margin cho các section */
+.section {
+  margin: 40px;
+}
+
+/*
+THÔNG TIN CÁ NHÂN
+xác định vị trí */
+#info {
+  position: relative;
+  box-sizing: border-box;
+}
+
+table {
+  width: 50%;
+}
+
+/* kích thước hình ảnh */
+img {
+  width: 113px;
+  height: 113px;
+}
+
+/* hình ảnh profile */
+.avatar {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+/* chọn màu cho h1 */
+h1 {
+  color: #0e2452;
+}
+
+/* MỤC TIÊU NGHỀ NGHIỆP */
+#target {
+  box-sizing: border-box;
+}
+
+/* HỌC VẤN */
+#education {
+  box-sizing: border-box;
+}
+
+/* tạo khối và viền  */
+.education-line-1,
+.education-line-2 {
+  display: inline-block;
+  border-bottom: 1px solid #d6cecee4;
+  width: 100%;
+}
+
+.education-line-1--left,
+.education-line-2--left {
+  width: 25%;
+  float: left;
+}
+
+.education-line-1--right,
+.education-line-2--right {
+  width: 75%;
+  float: right;
+}
+
+/* KINH NGHIỆM */
+.experience {
+  box-sizing: border-box;
+}
+
+.experience-line-1,
+.experience-line-2 {
+  display: inline-block;
+  border-bottom: 1px solid #d6cecee4;
+  width: 100%;
+}
+
+.experience-line-1--left,
+.experience-line-2--left {
+  width: 25%;
+  float: left;
+}
+.experience-line-1--right,
+.experience-line-2--right {
+  width: 75%;
+  float: right;
+}
+
+/* HOẠT ĐỘNG */
+.activity {
+  box-sizing: border-box;
+}
+
+.activity-line-1,
+.activity-line-2 {
+  display: inline-block;
+  border-bottom: 0.5px solid #d6cecee4;
+  width: 100%;
+}
+
+.activity-line-1--left,
+.activity-line-2--left {
+  width: 25%;
+  float: left;
+}
+.activity-line-1--right,
+.activity-line-2--right {
+  width: 75%;
+  float: right;
+}
+
+/* KỸ NĂNG */
+
+#skill {
+  box-sizing: border-box;
+}
+
+.skill-line-1,
+.skill-line-2,
+.skill-line-3,
+.skill-line-4 {
+  display: inline-block;
+  border-bottom: 0.5px solid #d6cecee4;
+  width: 100%;
+}
+
+.skill-line-1--left,
+.skill-line-2--left,
+.skill-line-3--left,
+.skill-line-4--left {
+  width: 25%;
+  float: left;
+}
+
+.skill-line-1--right,
+.skill-line-2--right,
+.skill-line-3--right,
+.skill-line-4--right {
+  width: 75%;
+  float: right;
+}
+
+/* CHỨNG NHẬN - GIẢI THƯỞNG */
+.certificate {
+  box-sizing: border-box;
+}
+
+.certificate-line-1,
+.certificate-line-2 {
+  display: inline-block;
+  border-bottom: 0.5px solid #d6cecee4;
+  width: 100%;
+}
+
+.certificate-line-1--left,
+.certificate-line-2--left {
+  width: 25%;
+  float: left;
+}
+
+.certificate-line-1--right,
+.certificate-line-2--right {
+  width: 75%;
+  float: right;
+}
+
+/* SỞ THÍCH */
+.hobby {
+  box-sizing: border-box;
+}
+
+/* DỰ ÁN */
+#project {
+  box-sizing: border-box;
+}
+
+ul {
+  padding-left: 16px;
+  box-sizing: border-box;
+}
+
+/* LIÊN HỆ */
+a:link,
+a:visited {
+  text-decoration: none;
+  color: blue;
+}
+
+a:hover,
+a:active {
+  color: red;
+}
+
+ol {
+  padding-left: 16px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+/* NÂNG CAO: TẠO TIMELINE CHO HỌC VẤN VÀ KINH NGHIỆM LÀM VIỆC */
+/* TẠO THƯỚC DỌC */
+.timeline {
+  list-style-type: none;
+  box-sizing: border-box;
+  position: relative;
+  margin: 0 auto;
+}
+
+/* TẠO THƯỚC DỌC */
+.timeline::before {
+  content: "";
+  position: absolute;
+  width: 1px;
+  background-color: black;
+  top: 0px;
+  bottom: 15px;
+  left: 3px;
+}
+
+/* ĐỊNH VỊ VỊ TRÍ TUYỆT ĐỐI CHO <li> */
+.timeline li {
+  position: relative;
+}
+/* TẠO VÒNG TRÒN TRÊN THƯỚC DỌC */
+.timeline li::before {
+  content: "";
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  background-color: black;
+  top: 8px;
+  left: -16px;
+  border-radius: 50%;
+  z-index: 1;
+}
